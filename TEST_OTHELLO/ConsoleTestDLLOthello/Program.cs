@@ -89,10 +89,14 @@ namespace ConsoleTestDLLOthello
                 for (int i = 0; i < T1.Count(); i++)
                 {
                     if (T1[i].Name.Contains("Board"))       // the IA's class that implements IPlayable must have "Board" in its name. E.g OthelloBoard, TheBoard, MyBoard, ...
-                        player1 = (IPlayable.IPlayable)Activator.CreateInstance(T1[i]);  // requires a default constructore
+                    {
+                        player1 = (IPlayable.IPlayable)Activator.CreateInstance(T1[i]); // requires a default constructore
+                    }  
                 }
-                if (player1 == null)
+                if (player1 == null)   
+                {
                     player1 = new OthelloIA3.Board();
+                }
                 Type[] T2 = IAPlayers[1].GetTypes();        //or    GetType ("OthelloIA2.OthelloBoard");
                 for (int i = 0; i < T2.Count(); i++)
                 {
@@ -100,12 +104,15 @@ namespace ConsoleTestDLLOthello
                         player2 = (IPlayable.IPlayable)Activator.CreateInstance(T2[i]);  // requires a default constructore
                 }
                 if (player2 == null)
-                    player2 = new OthelloIA3.Board();
+                {
+                    player2 = new OthelloIA2.OthelloBoard();
+                }
+                    
             }
             else // b) add a reference to your class assembly in the project and instantiate it 
             {
                 player1 = new OthelloIA3.Board();   // for example
-                player2 = new OthelloIA3.Board();   // for example
+                player2 = new OthelloIA2.OthelloBoard();   // for example
             }
             // The Game controller
             serverController = new OthelloLib.Board();             //reference interne au projet

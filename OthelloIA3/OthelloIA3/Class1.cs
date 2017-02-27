@@ -35,6 +35,7 @@ namespace OthelloIA3
         private int[,] myBoard;
         private List<Tuple<int, int>> flips;
         private List<Tuple<int, int>> potentialFlips;
+        private List<Tuple<int, int>> ableCases;
         int[,] direction = { { 1, 0 }, { 0, 1 }, { 0, -1 }, { -1, 0 }, { 1, 1 }, { 1, -1 }, { -1, -1 }, { -1, 1 } };
    
 
@@ -43,6 +44,7 @@ namespace OthelloIA3
             /* List used to flips the right tiles*/
             flips = new List<Tuple<int, int>>();
             potentialFlips = new List<Tuple<int, int>>();
+            ableCases = new List<Tuple<int, int>>();
 
             /* Board size */
             boardsize = BOARDSIZE;
@@ -73,13 +75,14 @@ namespace OthelloIA3
         {
             return "03_Gygi_Schaffo";
         }
+
         public Tuple<int, int> GetNextMove(int[,] game, int level, bool whiteTurn)
         {
-            char[] colonnes = "ABCDEFGH".ToCharArray();
             updatePlayables(whiteTurn);
-            if (potentialFlips.Count == 0)
+            char[] colonnes = "ABCDEFGH".ToCharArray();
+            if (ableCases.Count == 0)
                 return new Tuple<int, int>(-1, -1);
-            return potentialFlips.First();
+            return ableCases.First();
         }
 
         /* Our perfekt algorithme to find the playables */
@@ -174,6 +177,7 @@ namespace OthelloIA3
         public bool updatePlayables(bool isWhiteTurn)
         {
             clearPlayables();
+            ableCases.Clear();
             int numberOfPlayables = 0;
             for (int i = 0; i < boardsize; i++)
             {
@@ -184,6 +188,7 @@ namespace OthelloIA3
                         if (tiles[i, j].state == state.empty)
                         {
                             tiles[i, j].state = state.isAbleToPlay;
+                            ableCases.Add(new Tuple<int, int>(i, j));
                             numberOfPlayables++;
                         }
                     }
@@ -251,13 +256,7 @@ namespace OthelloIA3
             }
         }
 
-        /* Interface part for IA */
-        public Tuple<char, int> getNextMove(int[,] game, int level, bool whiteTurn)
-        {
-            Tuple<char, int> tuple = new Tuple<char, int>('a', 0);
-            return tuple;
-        }
-
+       
         /* Function that get the score using state */
         public int getScore(state s)
         {
@@ -302,6 +301,7 @@ namespace OthelloIA3
 
         public bool PlayMove(int column, int line, bool isWhite)
         {
+            updatePlayables(isWhite);
             if (tiles[column, line].state == state.isAbleToPlay)
             {
                 if (isWhite == true)
@@ -339,62 +339,5 @@ namespace OthelloIA3
         {
             return getScore(state.black);
         }
-    }
-    public class OthelloAI
-    {
-
-        public string GetName()
-        {
-            return "Goldorak";
-        }
-
-        #region IPlayable interface
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public int GetWhiteScore()
-        {
-            return 32;
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public int GetBlackScore()
-        {
-            return 32;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="column"></param>
-        /// <param name="line"></param>
-        /// <param name="isWhite"></param>
-        /// <returns></returns>
-        public bool PlayMove(int column, int line, bool isWhite)
-        {
-            return true;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="column"></param>
-        /// <param name="line"></param>
-        /// <param name="isWhite"></param>
-        /// <returns></returns>
-        public bool IsPlayable(int column, int line, bool isWhite)
-        {
-            return true;
-        }
-
-        public Tuple<int, int> GetNextMove(int[,] game, int level, bool isWhiteTurn)
-        {
-            return new Tuple<int, int>(-1, -1);
-        }
-
-        #endregion
     }
 }

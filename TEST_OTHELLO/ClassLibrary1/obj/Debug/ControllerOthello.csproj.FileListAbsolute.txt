@@ -11,3 +11,9 @@ C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\
 C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ClassLibrary1\bin\Debug\IPlayable.pdb
 C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\TEST_OTHELLO\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\TEST_OTHELLO\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\TEST_OTHELLO\ClassLibrary1\bin\Debug\IPlayable.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\TEST_OTHELLO\ClassLibrary1\bin\Debug\IPlayable.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\TEST_OTHELLO\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\TEST_OTHELLO\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -36,6 +36,10 @@
     <Reference Include="IPlayable">
       <HintPath>..\..\IPlayable\IPlayable\bin\Debug\IPlayable.dll</HintPath>
     </Reference>
+    <Reference Include="OthelloIA2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\OthelloIA2\OthelloIA2\bin\Debug\OthelloIA2.dll</HintPath>
+    </Reference>
     <Reference Include="OthelloIA3">
       <HintPath>..\..\OthelloIA3\OthelloIA3\bin\Debug\OthelloIA3.dll</HintPath>
     </Reference>
