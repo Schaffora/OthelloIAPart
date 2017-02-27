@@ -1,0 +1,14 @@
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\OthelloIA3.dll
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\OthelloIA3.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\IPlayable.dll
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\IPlayable.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.dll
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.csprojResolveAssemblyReference.cache
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\OthelloIA3.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\OthelloIA3.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\IPlayable.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\bin\Debug\IPlayable.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.csprojResolveAssemblyReference.cache
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.pdb

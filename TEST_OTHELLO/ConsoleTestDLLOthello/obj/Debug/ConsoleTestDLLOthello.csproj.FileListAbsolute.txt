@@ -1,0 +1,60 @@
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe.config
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.pdb
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.dll
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.pdb
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.csprojResolveAssemblyReference.cache
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.exe
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.pdb
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\OthelloIA2.dll
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\OthelloIA2.pdb
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\IPlayable.dll
+C:\Temp\_DOTNET\ClassLibrary1\ConsoleTestDLLOthello\bin\Debug\IPlayable.pdb
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe.config
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.exe
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.pdb
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.pdb
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.dll
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.dll
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA2.dll
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.pdb
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.pdb
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA2.pdb
+C:\Temp\_DOTNET\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.csprojResolveAssemblyReference.cache
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe.config
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.pdb
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.dll
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.dll
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA2.dll
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.pdb
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.pdb
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA2.pdb
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.csprojResolveAssemblyReference.cache
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.exe
+C:\Temp\DOTNET_OTHELLO\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe.config
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.dll
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.dll
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA3.dll
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA3.pdb
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.csprojResolveAssemblyReference.cache
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.exe
+C:\Users\damien.gygi\Documents\Visual Studio 2015\Projects\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe.config
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.exe
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ConsoleTestDLLOthello.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA3.dll
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\ClassLibrary1.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\IPlayable.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\bin\Debug\OthelloIA3.pdb
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.csprojResolveAssemblyReference.cache
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.exe
+C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\DOTNET_OTHELLOv_1.02\TEST_OTHELLO\ConsoleTestDLLOthello\obj\Debug\ConsoleTestDLLOthello.pdb
