@@ -37,9 +37,58 @@ namespace OthelloIA3
         private List<Tuple<int, int>> potentialFlips;
         private List<Tuple<int, int>> ableCases;
         int[,] direction = { { 1, 0 }, { 0, 1 }, { 0, -1 }, { -1, 0 }, { 1, 1 }, { 1, -1 }, { -1, -1 }, { -1, 1 } };
-   
+        const int INIT_VALUE= (-1000000000);
+        private int[,] tileEvaluations = new int[,]{
+                { 20, -3, 11, 08, 08, 11, -3, 20 },
+                { -3, -7, -4, 01, 01, -4, -7, -3 },
+                { 11, -4, 02, 02, 02, 02, -4, 11 },
+                { 08, 01, 02, -3, -3, 02, 01, 08 },
+                { 08, 01, 02, -3, -3, 02, 01, 08 },
+                { 11, -4, 02, 02, 02, 02, -4, 11 },
+                { -3, -7, -4, 01, 01, -4, -7, -3 },
+                { 20, -3, 11, 08, 08, 11, -3, 20 }
+            };
 
         public Board()
+        {
+
+            init();
+
+            /* Board initialisation */
+            tiles[4, 4].state = state.white;
+            tiles[3, 3].state = state.white;
+            tiles[4, 3].state = state.black;
+            tiles[3, 4].state = state.black;
+        }
+        
+        /* Constructor used for alphabeta algorithm*/
+        public Board(int[,] tiles)
+        {
+            init();
+
+            /* Get state of the tiles using b list */
+            for (int i = 0; i < BOARDSIZE; i++)
+            {
+                for (int j = 0; j < BOARDSIZE; j++)
+                {
+                    if (tiles[i, j] == -1)
+                    {
+                        this.tiles[i, j].state = state.empty;
+                    }
+                    else if (tiles[i, j] == 0)
+                    {
+                        this.tiles[i, j].state = state.white;
+                    }
+                    else if (tiles[i, j] == 1)
+                    {
+                        this.tiles[i, j].state = state.black;
+                    }
+                }
+            }
+
+        }
+
+        public void init()
         {
             /* List used to flips the right tiles*/
             flips = new List<Tuple<int, int>>();
@@ -52,42 +101,35 @@ namespace OthelloIA3
             /* List of the 64 tiles */
             tiles = new Tile[boardsize, boardsize];
             myBoard = new int[BOARDSIZE, BOARDSIZE];
+
             /*Tiles initialisation*/
             for (int i = 0; i < boardsize; i++)
             {
                 for (int j = 0; j < boardsize; j++)
                 {
-                    tiles[i, j] = new Tile();
+                    this.tiles[i, j] = new Tile();
                 }
             }
-
-            /* Board initialisation */
-            tiles[4, 4].state = state.white;
-            tiles[3, 3].state = state.white;
-            tiles[4, 3].state = state.black;
-            tiles[3, 4].state = state.black;
-
-            /* Search playable */
-            //updatePlayables(isWhiteTurn);
         }
-
+        /* Function that return the name of the IA, used for tournament */
         public string GetName()
         {
             return "03_Gygi_Schaffo";
         }
 
+        /* Function that return the best next move */
         public Tuple<int, int> GetNextMove(int[,] game, int level, bool whiteTurn)
         {
             updatePlayables(whiteTurn);
-            char[] colonnes = "ABCDEFGH".ToCharArray();
-            if (ableCases.Count == 0)
-                return new Tuple<int, int>(-1, -1);
-            return ableCases.First();
+            adaptBoard(game);
+            double score = eval(whiteTurn);
+            Tuple<double, Tuple<int, int>> bestMoves = alphabeta(game, level, 1, score, whiteTurn);
+            return bestMoves.Item2;
         }
 
         /* Our perfekt algorithme to find the playables */
         public bool playable(int c, int l, state s)
-        {  // updatePlayables
+        {  
             bool found = false;
             state otherState;
             if (s == state.white)
@@ -256,7 +298,6 @@ namespace OthelloIA3
             }
         }
 
-       
         /* Function that get the score using state */
         public int getScore(state s)
         {
@@ -272,23 +313,7 @@ namespace OthelloIA3
             return score;
         }
 
-        /* Function to reset, restart a game */
-        public void resetGame()
-        {
-            for (int i = 0; i < boardsize; i++)
-            {
-                for (int j = 0; j < boardsize; j++)
-                {
-                    tiles[i, j].state = state.empty;
-                }
-            }
-            tiles[4, 4].state = state.white;
-            tiles[3, 3].state = state.white;
-            tiles[4, 3].state = state.black;
-            tiles[3, 4].state = state.black;
-            updatePlayables(false);
-        }
-
+        /* Function that verify if a tile is playable */
         public bool IsPlayable(int column, int line, bool isWhite)
         {
             bool tilePlayabe = false;
@@ -299,6 +324,83 @@ namespace OthelloIA3
             return tilePlayabe;
         }
 
+        /* Function to make board state using value 1,0 or other */
+        public void adaptBoard(int[,] tiles)
+        {
+            for (int i = 0; i < BOARDSIZE; i++)
+            {
+                for (int j = 0; j < BOARDSIZE; j++)
+                {
+                    if (tiles[i, j] == 1)
+                        this.tiles[i, j].state = state.black;
+                    else if (tiles[i, j] == 0)
+                        this.tiles[i, j].state = state.white;
+                    else
+                        this.tiles[i, j].state = state.empty;
+                }
+            }
+        }
+
+        /* Eval function used for the IA */
+        private double eval(bool whiteTurn)
+        {
+            state actualPlayingColor = whiteTurn ? state.white : state.black;
+            updatePlayables(whiteTurn);
+            double possibilityScore = 0;
+            double actualScore = whiteTurn ? GetWhiteScore() : GetBlackScore();
+            double mvChoice = ableCases.Count;
+          
+            for (int i = 0; i < BOARDSIZE; i++)
+            {
+                for (int j = 0; j < BOARDSIZE; j++)
+                {
+                    if (tiles[i, j].state == actualPlayingColor)
+                        possibilityScore +=tileEvaluations[i, j];      
+                }
+            }
+            double evalResult = (15 * possibilityScore) + (3 * actualScore) + (10 * mvChoice);
+            return evalResult ;
+        }
+
+        /* AlphaBeta algorithme used for the Tournament */
+        private Tuple<double, Tuple<int, int>> alphabeta(int[,] parent, int depth, int minMax, double parentValue, bool whiteTurn)
+        {
+            adaptBoard(parent);
+            updatePlayables(whiteTurn);
+
+            /* Avons nous parcouru toute la profondeur ? Il y a t'il des possibilités de jouer ?*/
+            if (depth == 0 || ableCases.Count == 0)
+                return new Tuple<double, Tuple<int, int>>(eval(whiteTurn), new Tuple<int, int>(-1, -1));
+
+            double bestResult = minMax * INIT_VALUE;
+            List<Tuple<int, int>> possiblePlays = ableCases.ToList();
+            Tuple<int, int> bestTile = null;
+
+            foreach (Tuple<int, int> plays in possiblePlays)
+            {
+                /* Création du/des nouveau(x) board d'après la liste de coup de jeu possible*/
+                Board newBoard = new Board(parent);
+                newBoard.PlayMove(plays.Item1, plays.Item2, whiteTurn);
+                
+                /* Récusivité de l'alrogithme alphaBeta */
+                Tuple<double, Tuple<int, int>> newBoardValues = newBoard.alphabeta(newBoard.GetBoard(), depth - 1, -minMax, bestResult, !whiteTurn);
+
+                /* On vérifie quelle case est la plus optimisé pour jouer */
+                if (newBoardValues.Item1 * minMax > bestResult * minMax)
+                {
+                    bestResult = newBoardValues.Item1 * minMax;
+                    bestTile = plays;
+
+                    if (bestResult * minMax > parentValue * minMax)
+                    {
+                        break;
+                    }
+                }
+            }
+            return new Tuple<double, Tuple<int, int>>(bestResult, bestTile);
+        }
+
+        /* PlayMove function */
         public bool PlayMove(int column, int line, bool isWhite)
         {
             updatePlayables(isWhite);
@@ -313,6 +415,7 @@ namespace OthelloIA3
                 return false;
         }
 
+        /* Method that return state of the board, used for the IA tournament */
         public int[,] GetBoard()
         {
             for (int i = 0; i < BOARDSIZE; i++)
@@ -330,11 +433,13 @@ namespace OthelloIA3
             return myBoard;
         }
 
+        /* Method that return the white score */
         public int GetWhiteScore()
         {
             return getScore(state.white);
         }
 
+        /* Method that return the black score */
         public int GetBlackScore()
         {
             return getScore(state.black);
