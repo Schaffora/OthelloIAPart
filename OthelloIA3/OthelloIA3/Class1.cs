@@ -39,14 +39,14 @@ namespace OthelloIA3
         int[,] direction = { { 1, 0 }, { 0, 1 }, { 0, -1 }, { -1, 0 }, { 1, 1 }, { 1, -1 }, { -1, -1 }, { -1, 1 } };
         const int INIT_VALUE= (-1000000000);
         private int[,] tileEvaluations = new int[,]{
-                { 20, -3, 11, 08, 08, 11, -3, 20 },
-                { -3, -7, -4, 01, 01, -4, -7, -3 },
-                { 11, -4, 02, 02, 02, 02, -4, 11 },
-                { 08, 01, 02, -3, -3, 02, 01, 08 },
-                { 08, 01, 02, -3, -3, 02, 01, 08 },
-                { 11, -4, 02, 02, 02, 02, -4, 11 },
-                { -3, -7, -4, 01, 01, -4, -7, -3 },
-                { 20, -3, 11, 08, 08, 11, -3, 20 }
+                { 400, -105, 65, 40, 40, 65, -105, 400 },
+                { -105, -35, -20, 05, 05, -20, -35, -105 },
+                { 165, -20, 10, 10, 10, 10, -20, 165 },
+                { 90, 05, 10, -15, -15, 10, 05, 90 },
+                { 90, 05, 10, -15, -15, 10, 05, 90 },
+                { 165, -20, 10, 10, 10, 10, -20, 165 },
+                { -105, -35, -20, 05, 05, -20, -35, -105 },
+                { 400, -105, 65, 40, 40, 65, -105, 400 }
             };
 
         public Board()
@@ -345,20 +345,27 @@ namespace OthelloIA3
         private double eval(bool whiteTurn)
         {
             state actualPlayingColor = whiteTurn ? state.white : state.black;
+
             updatePlayables(whiteTurn);
-            double possibilityScore = 0;
+            double nbOfMovesForMe = ableCases.Count;
+            updatePlayables(!whiteTurn);
+            double nbOfMovesForOpponent = ableCases.Count;
+            updatePlayables(whiteTurn);
+
+            double positionScore = 0;
             double actualScore = whiteTurn ? GetWhiteScore() : GetBlackScore();
-            double mvChoice = ableCases.Count;
-          
+
             for (int i = 0; i < BOARDSIZE; i++)
             {
                 for (int j = 0; j < BOARDSIZE; j++)
                 {
                     if (tiles[i, j].state == actualPlayingColor)
-                        possibilityScore +=tileEvaluations[i, j];      
+                        positionScore +=(tileEvaluations[i, j]/5);      
+                    else
+                        positionScore -= (tileEvaluations[i, j] / 5);
                 }
             }
-            double evalResult = (15 * possibilityScore) + (3 * actualScore) + (10 * mvChoice);
+            double evalResult = (7 * positionScore) + (15 * actualScore) + (8 * nbOfMovesForMe) - (3*nbOfMovesForOpponent);
             return evalResult ;
         }
 

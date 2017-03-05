@@ -18,4 +18,3 @@ C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPa
 C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\OthelloIA3\OthelloIA3\bin\Debug\IPlayable.pdb
 C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.dll
 C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.pdb
-C:\Users\raphael.schaffo\HE-ARC\MODULE NIVEAU III\C#\Othello IA Part\OthelloIAPart\OthelloIA3\OthelloIA3\obj\Debug\OthelloIA3.csprojResolveAssemblyReference.cache
